@@ -42,5 +42,6 @@ export {
     thumbnailBackground,
     thumbnailShoe1,
     thumbnailShoe2,
-    thumbnailShoe3
+    thumbnailShoe3,
+
 }

@@ -23,7 +23,7 @@ export default {
       },
       colors: {
         'primary': "#ECEEFF",
-        "coral-red": "#FF6452",
+        "blue-sec": "#0080ff",
         "slate-gray": "#6D6D6D",
         "pale-blue": "#F5F6FF",
         "white-400": "rgba(255, 255, 255, 0.80)"
@@ -34,9 +34,15 @@ export default {
       backgroundImage: {
         'hero': "url('assets/images/collection-background.svg')",
         'card': "url('assets/images/thumbnail-background.svg')",
+        'nike': "url('assets/images/nike.jpg')"
       },
       screens: {
-        "wide": "1440px"
+        "wide": "1440px",
+        'sm': '480px',
+        'md': '768px',
+        'lg': '1024px',
+        'xl': '1280px',
+        '2xl': '1536px',
       }
     },
   },
