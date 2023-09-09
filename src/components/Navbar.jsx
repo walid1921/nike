@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 
 import { headerLogo } from '../assets/images';
 import { navLinks } from '../constants/index';
@@ -10,15 +10,12 @@ import { Fade as Hamburger } from 'hamburger-react'
 const Navbar = () => {
 
   const [isOpen, setIsOpen] = useState(false)
-
   const handelToggle = () => {setIsOpen(!isOpen);}
  
-  
-
 
   return (
     <header className='padding-x py-8 w-full'>
-      <nav className='center-between max-container'>
+      <nav className='center-between max-container '>
         <a href="/">
           <img src={headerLogo} height={40} width={100} alt="Logo" className='custom-image'/>
         </a>
@@ -35,7 +32,6 @@ const Navbar = () => {
         {/* ======== Menu Button ========= */}
 
         <div onClick={handelToggle} className='z-10 max-lg:block hidden cursor-pointer'>
-        {/* {!isOpen ? <HiOutlineMenu className='text-blue-sec' size={30} /> : <CgClose size={30} className='text-blue-sec' />} */}
         <Hamburger rounded  color="#0080ff" size={25} toggled={isOpen} toggle={setIsOpen} />
         </div>
 
