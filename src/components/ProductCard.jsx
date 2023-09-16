@@ -3,7 +3,7 @@ import { star } from "../assets/icons";
 const ProductCard = ({ imgURL, name, price, rating }) => {
   return (
     <div className="flex flex-1 flex-col w-full max-sm:w-full ">
-      <img src={imgURL} alt={name} className="w-[280px] h-[280px] hover:cursor-pointer" />
+      <img src={imgURL} alt={name} className="w-[280px] h-[280px] hover:cursor-pointer transform hover:scale-[1.05] transition-all ease-in-out duration-500" />
 
       <div className="mt-8 flex flex-col justify-start ">
         <div className="flex items-center gap-3">
